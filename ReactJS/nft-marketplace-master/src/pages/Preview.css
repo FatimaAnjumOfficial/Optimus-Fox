@@ -1,0 +1,79 @@
+.nft-container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.nft-list {
+  width: 70%;
+}
+
+.nft-preview {
+  border: 1px solid #353333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 25%;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  max-width: 250px;
+  max-height: 580px;
+  background: #74122a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nft-preview img {
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.nft-preview p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.nft-preview h1 {
+  margin-bottom: 15px;
+}
+
+.nft-card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  background: #881b40;
+  color: #fff;
+}
+
+.nft-card img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.nft-card p {
+  margin: 5px 0;
+}
+
+.image-preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image-preview {
+  max-width: 200px; /* Adjust as needed */
+  max-height: 300px; /* Adjust as needed */
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}

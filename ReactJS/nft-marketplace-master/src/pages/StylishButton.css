@@ -1,0 +1,25 @@
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.stylish-button {
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #6a1b9a;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.stylish-button:hover {
+  background-color: #4a148c;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

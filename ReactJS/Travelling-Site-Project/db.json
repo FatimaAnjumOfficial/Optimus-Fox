@@ -1,0 +1,143 @@
+{
+  "registration": [
+    {
+      "id": "9483",
+      "firstName": "Fatima",
+      "lastName": "Anjum",
+      "email": "fatimaanjumofficial@gmail.com",
+      "phoneNo": "09876",
+      "age": "20",
+      "gender": "female",
+      "address": "pakistan",
+      "country": "Pakistan",
+      "city": "Karachi"
+    },
+    {
+      "id": "665c",
+      "firstName": "Fatima",
+      "lastName": "Anjum",
+      "email": "fatimaanjum2020.1@gmail.com",
+      "phoneNo": "09876",
+      "age": "20",
+      "gender": "female",
+      "address": "pakistan",
+      "country": "Pakistan",
+      "city": "Karachi"
+    },
+    {
+      "id": "c520",
+      "firstName": "nimra",
+      "lastName": "Anjum",
+      "email": "nimea@gmail.com",
+      "phoneNo": "098765",
+      "age": "20",
+      "gender": "female",
+      "address": "H. no 10 St. no 34 Mohallah Aqab Mozang Police Station Lahore",
+      "country": "Pakistan",
+      "city": "Lahore"
+    }
+  ],
+  "signup": [
+    {
+      "id": "fbaa",
+      "name": "Nimra Anjum",
+      "username": "fatima@gmail.com",
+      "email": "nimea@gmail.com",
+      "password": "3456",
+      "c_password": "3456"
+    }
+  ],
+  "hotel": [
+    {
+      "id": "f28e"
+    }
+  ],
+  "contactUs": [
+    {
+      "id": "3b90",
+      "name": "Fatima Anjum",
+      "email": "fatimaanjum2020.1@gmail.com",
+      "phone": "098765",
+      "message": "best website"
+    }
+  ],
+  "FBooking": [
+    {
+      "id": "1a77",
+      "name": "Fatima Anjum",
+      "cnic": "09876543223456",
+      "email": "fatima@gmail.com",
+      "phone": "098765",
+      "flightNumber": "EK6006",
+      "flightName": "Emirates",
+      "from": "Dubai, UAE",
+      "to": "London, UK",
+      "departure": "2024-08-25 09:00",
+      "arrival": "2024-08-25 13:00"
+    },
+    {
+      "id": "a389",
+      "name": "fatima",
+      "cnic": "098763w34567",
+      "email": "fatimaanjum2020.1@gmail.com",
+      "phone": "09876",
+      "flightNumber": "TK4004",
+      "flightName": "Turkish Delight",
+      "from": "Istanbul, Turkey",
+      "to": "Paris, France",
+      "departure": "2024-08-23 07:00",
+      "arrival": "2024-08-23 10:00"
+    },
+    {
+      "id": "cd01",
+      "name": "Nimra Anjum",
+      "cnic": "3520237376844",
+      "email": "nimea@gmail.com",
+      "phone": "098765",
+      "flightNumber": "NY1001",
+      "flightName": "Skyline Express",
+      "from": "New York, USA",
+      "to": "Los Angeles, USA",
+      "departure": "2024-08-20 08:00",
+      "arrival": "2024-08-20 11:00"
+    }
+  ],
+  "HBooking": [
+    {
+      "id": "68a4"
+    },
+    {
+      "id": "3629",
+      "name": "Fatima Anjum",
+      "cnic": "09876543223456",
+      "email": "fatimaanjum2020.1@gmail.com",
+      "room": "5",
+      "hotelName": "Aria Elegance Resort",
+      "hotelCountry": "France",
+      "hotelCity": "Paris",
+      "hotelRent": "$80,673"
+    },
+    {
+      "id": "7219",
+      "name": "Fatima Anjum",
+      "cnic": "865432",
+      "email": "fatima@gmail.com",
+      "room": "9",
+      "hotelName": "Aria Elegance Resort",
+      "hotelCountry": "France",
+      "hotelCity": "Paris",
+      "hotelRent": "$80,673"
+    },
+    {
+      "id": "0202",
+      "name": "Nimra Anjum",
+      "cnic": "3520237376844",
+      "email": "nimea@gmail.com",
+      "room": "76",
+      "hotelName": "Mandarin Oriental",
+      "hotelCountry": "USA",
+      "hotelCity": "New York",
+      "hotelRent": "$100,523"
+    }
+  ]
+}

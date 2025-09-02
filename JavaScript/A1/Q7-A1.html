@@ -1,0 +1,29 @@
+<!-- Question # 7 Write an arrow function that takes an object representing a person's name
+(with properties first and last) and returns a string that says "Hello, [first] [last]!".
+Use template literals to construct the string. Write code to test this function with
+different input values. -->
+
+<html>
+    <head>
+	    <title>Greeting Message</title>
+		<script>
+		    const message = (personName) => "Hello " + personName.first + " " + personName.last + "!";
+			
+			function greeting()
+			{
+			    let fn = document.getElementById("1").value;
+				let ln = document.getElementById("2").value;
+				
+				let personName = {first:fn, last:ln};
+				alert(message(personName));
+			}
+		</script>
+	</head>
+	<body>
+	    First Name <input type="text" id="1" name="fn"><br>
+		Last Name <input type="text" id="2" name="ln"><br>
+		<br>
+		<button type="button" onclick="greeting()">Greeting Message</button><br>
+	
+    </body>
+</html>

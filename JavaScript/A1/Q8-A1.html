@@ -1,0 +1,25 @@
+<!-- Question # 8 Define a function called capitalize that takes a string as a parameter
+and returns the same string with the first letter capitalized. Write code to test this
+function with different input values. -->
+
+<html>
+    <head>
+	    <title> </title>
+		<script>
+		    function capitalize(string)
+			{
+			    return string.charAt(0).toUpperCase() + string.slice(1);
+			}
+			function inputString()
+			{
+			    let string = document.getElementById("s").value;
+				
+				alert(capitalize(string));
+			}
+		</script>
+	</head>
+	<body>
+		String <input type="text" id="s" name="string"><br>
+		<button type="button" onclick="inputString()">Capitalize</button>
+    </body>
+</html>

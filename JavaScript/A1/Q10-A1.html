@@ -1,0 +1,42 @@
+<!-- Question # 10 Define a function named isPalindrome that takes a string as a parameter
+and returns true if the string is a palindrome (i.e., it reads the same forwards and
+backwards) and false otherwise. Write code to test this function with different input
+values. -->
+
+<html>
+    <head>
+	    <title> </title>
+		<script>
+		    function isPalindrome(string)
+			{
+			    let lower = string.toLowerCase();
+				let split = string.split("");
+				let reverse = split.reverse();
+				let concatenate = reverse.join("");
+				
+			    if(lower == concatenate)
+				{
+				    return true;
+				}
+				else
+				{
+				    return false;
+				}
+			}
+		    function inputString()
+			{
+			    let string = document.getElementById("s").value;
+				let palindrome = isPalindrome(string);
+				
+				document.getElementById("p").value = palindrome;
+			}
+		</script>
+	</head>
+	<body>
+        String <input type="text" id="s" name="string"><br>
+	    <br>
+		<button type="button" onclick="inputString()">Reverse</button><br>
+		<br>
+		Plaindrome <input type="text" id="p" name="palindrome"><br>
+    </body>
+</html>

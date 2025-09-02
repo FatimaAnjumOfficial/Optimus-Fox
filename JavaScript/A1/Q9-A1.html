@@ -1,0 +1,36 @@
+<!-- Question # 9 Write an arrow function that takes an array of strings and returns a new
+array with all the strings capitalized. Use the map method to apply the capitalization to
+each element. Write code to test this function with different input arrays. -->
+
+<html>
+<head>
+    <title>Capitalize an Array of Strings</title>
+    <script>
+        const capitalizeArray = (strings) => {
+		
+            return strings.map(str => str.charAt(0).toUpperCase() + str.slice(1));
+        }
+
+        function inputString()
+		{
+            let strings = [];
+            let input;
+
+            do
+			{
+                input = prompt("String", "");
+                if (input !== "")
+				{
+                    strings.push(input);
+                }
+            }while (input !== "");
+
+            let result = capitalizeArray(strings);
+            alert(result);
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="inputString()">Take Strings</button>
+</body>
+</html>

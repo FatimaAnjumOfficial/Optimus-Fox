@@ -1,0 +1,34 @@
+<!-- Question # 5 Write an arrow function that takes a string as a parameter and
+returns the length of that string. Write code to test this function with different
+input values. -->
+
+<html>
+    <head>
+	    <title>String Length</title>
+		<script>
+	        const length = (string) => {
+			
+			    let lengthCount = 0;
+				
+				for(let i=0; i<string.length; i++)
+				{
+				    lengthCount++;
+				}
+				
+				return lengthCount;
+			}
+			function input()
+			{
+			    let result = length(document.getElementById("s").value);
+				document.getElementById("l").value = result;
+			}
+	    </script>
+	</head>
+	<body>
+	    String <input type="text" id="s" name="string"><br>
+		<br>
+		<button type="button" onclick="input()">Calculate Length</button><br>
+		<br>
+		String Length <input type="number" id="l" name="length"><br>
+	</body>
+</html>

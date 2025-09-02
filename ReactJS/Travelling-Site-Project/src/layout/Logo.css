@@ -1,0 +1,82 @@
+.logo {
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.logo h5 {
+  font-size: 8px;
+  color: #e6dede;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* Adjust width as needed */
+  /*  height: auto; Maintain aspect ratio */
+  top: 0;
+}
+
+.logo-container img {
+  width: 100%; /* Scale image to container width */
+  /*  height: auto; Maintain aspect ratio */
+  object-fit: contain; /* Ensure image is not distorted */
+  top: 0;
+}
+
+/* Add this to your CSS file */
+.image-container img {
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+.logo-container img {
+  transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.mobile-menu .logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu li {
+  padding: 12px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #000;
+}

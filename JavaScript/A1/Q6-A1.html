@@ -1,0 +1,33 @@
+<!-- Question # 6 Define a function named reverseString that takes a string as a parameter
+and returns the reverse of that string. Write code to test this function with different
+input values. -->
+
+<html>
+    <head>
+	    <title>Reverse a String</title>
+		<script>
+		    function reverseString(string)
+			{
+			    let split = string.split("");
+				let reverse = split.reverse();
+				let concatenate = reverse.join("");
+				
+				return concatenate;
+			}
+			function inputString()
+			{
+			    let string = document.getElementById("s").value;
+				let reverse = reverseString(string);
+				
+				document.getElementById("r").value = reverse;
+			}
+		</script>
+	</head>
+	<body>
+	    String <input type="text" id="s" name="string"><br>
+	    <br>
+		<button type="button" onclick="inputString()">Reverse</button><br>
+		<br>
+		Reverse <input type="text" id="r" name="reverse"><br>
+    </body>
+</html>

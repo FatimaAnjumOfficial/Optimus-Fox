@@ -1,0 +1,33 @@
+<!-- Question # 2 Write a function called greeting that takes a name as a parameter
+and returns a string that says "Hello, [name]!". Use template literals to
+construct the string. Write code to test this function with different input
+values. -->
+
+<html>
+    <head>
+	    <title> </title>
+		<script>
+		    function greeting(name)
+			{
+			    let string = "Hello, " + name + "!";
+			    return string;
+			}
+			function input()
+			{
+			    let name = document.getElementById("n").value;
+				
+				let message = greeting(name);
+				alert(message);
+			}
+		</script>
+    </head>
+	<body>
+	    <fieldset>
+		    <legend>Greeting</legend>
+			
+			Name <input type="text" id="n" name="name"><br>
+			<br>
+			<button type="button" onclick="input()">Greeting Message</button><br>
+		</fieldset>
+    </body>
+</html>

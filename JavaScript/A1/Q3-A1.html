@@ -1,0 +1,36 @@
+<!-- Question # 3 Create an arrow function that takes an array of numbers and
+returns the sum of those numbers. Write code to test this function with different
+input arrays. -->
+
+<html>
+    <head>
+	    <title>Sum of Array Numbers</title>
+	</head>
+	<body>
+		<script>
+		    const sumOfArray = (num) => {
+			    let sum = 0;
+				for(let i=0; i<num.length; i++)
+				{
+				    sum += num[i];
+				}
+				return sum;
+			}
+		    function takeNumbers()
+			{
+			    let num = [];
+				let input;
+				
+				do
+				{
+				    input = prompt("Number ", "");
+					num.push(Number(input));
+				}while(input != "");
+				
+				let result = sumOfArray(num);
+				alert(result);
+			}
+		</script>
+		<button type="button" onclick="takeNumbers()">Take Numbers</button>
+	</body>
+</html>

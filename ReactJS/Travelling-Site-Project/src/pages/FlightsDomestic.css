@@ -1,0 +1,87 @@
+.flights-domestic-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+}
+
+.page-header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flight-search {
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.search-form input {
+  padding: 8px;
+  width: 200px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  background: linear-gradient(to top, #061f26, #0e4e60, #4e8ea0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #0056b3;
+}
+
+.flight-list {
+  margin-top: 20px;
+}
+
+.flight-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.flight-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flight-card h3 {
+  margin: 0 0 10px;
+}
+
+.flight-card p {
+  margin: 5px 0;
+}

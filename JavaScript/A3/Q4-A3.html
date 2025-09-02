@@ -1,0 +1,75 @@
+<!-- Define a function named fetchComments that uses the JSONPlaceholder API
+ (https://jsonplaceholder.typicode.com) to fetch a list of comments and returns a promise that resolves to an
+ array of comment objects. Use the axios library to make the API call and the data property to parse the
+ response. Use the filter method to filter out the comments that do not have a name. Use the forEach method to
+ display the remaining comments in a table format on a webpage. Write code to test this function by calling it
+ and displaying the result on a webpage.
+
+Note:
+It should be implement on simple html file where javascript tag should use and fetch or axios should use for
+getting the data. and when data will be get from 3rd party API it should be display on table tag. You can use
+css or bootstrap too. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fetch Comments</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="mt-4">Comments</h2>
+      <table class="table table-bordered mt-3" id="commentsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Body</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      async function fetchComments() {
+        const url = "https://jsonplaceholder.typicode.com/comments";
+
+        try {
+          const response = await axios.get(url);
+          const comments = response.data;
+
+          const filteredComments = comments.filter((comment) => comment.name);
+
+          return filteredComments;
+        } catch (error) {
+          console.error("Error fetching comments:", error);
+          return [];
+        }
+      }
+
+      function displayComments(comments) {
+        const tableBody = document.querySelector("#commentsTable tbody");
+        tableBody.innerHTML = "";
+
+        comments.forEach((comment) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+                    <td>${comment.id}</td>
+                    <td>${comment.name}</td>
+                    <td>${comment.email}</td>
+                    <td>${comment.body}</td>
+                `;
+          tableBody.appendChild(row);
+        });
+      }
+
+      fetchComments().then(displayComments);
+    </script>
+  </body>
+</html>
